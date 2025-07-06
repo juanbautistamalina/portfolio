@@ -1,0 +1,81 @@
+/* === HEADER Y NAVEGACIÓN === */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-card) !important;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #23233a;
+    box-shadow: 0 2px 12px 0 #ff5a5f22;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--text-main);
+    background: var(--bg-card) !important;
+}
+
+.nav-brand h2 {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.5rem;
+    text-shadow: 0 0 8px var(--accent-dark);
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    background: var(--bg-card) !important;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--accent-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    text-shadow: 0 0 4px #232837;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--accent);
+    margin: 3px 0;
+    transition: 0.3s;
+} 

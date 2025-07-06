@@ -1,0 +1,107 @@
+/* === VARIABLES CSS === */
+:root {
+    --bg-main: #182024;
+    --bg-card: #212b2f;
+    --text-main: #e6eaf3;
+    --text-secondary: #b3b8c5;
+    --accent: #2dd4bf;
+    --accent-dark: #0e9488;
+    --accent-hover: #fff;
+    --shadow-accent: 0 0 12px #2dd4bf44;
+}
+
+/* === CONFIGURACIONES BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Outfit', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === UTILIDADES === */
+.section {
+    padding: 80px 0;
+    background: var(--bg-main);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent-dark);
+    letter-spacing: 1px;
+}
+
+.bg-light {
+    background: var(--bg-card);
+}
+
+/* === BOTONES === */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: var(--bg-main);
+    box-shadow: 0 0 12px var(--accent);
+}
+
+.btn-primary:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(--accent-dark);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.btn-secondary:hover {
+    background: var(--accent);
+    color: var(--bg-main);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: var(--bg-main);
+} 

@@ -1,0 +1,13 @@
+/* === ARCHIVO CSS PRINCIPAL === */
+
+/* Importar utilidades */
+@import url('./utils/variables.css');
+@import url('./utils/animations.css');
+@import url('./utils/responsive.css');
+
+/* Importar componentes */
+@import url('./components/header.css');
+@import url('./components/hero.css');
+
+/* Importar estilos principales */
+@import url('./styles.css'); 

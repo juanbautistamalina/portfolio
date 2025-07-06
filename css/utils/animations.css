@@ -1,0 +1,92 @@
+/* === ANIMACIONES CSS === */
+
+/* Efecto glitch para títulos */
+.hero-title, .section-title {
+    animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        text-shadow: 0 0 8px var(--accent-dark);
+    }
+    10% {
+        text-shadow: 2px 0 var(--accent), -2px 0 var(--accent-dark);
+    }
+    20% {
+        text-shadow: -2px 0 var(--accent), 2px 0 var(--accent-dark);
+    }
+    30% {
+        text-shadow: 2px 0 var(--accent), -2px 0 var(--accent-dark);
+    }
+    40% {
+        text-shadow: -2px 0 var(--accent), 2px 0 var(--accent-dark);
+    }
+    50% {
+        text-shadow: 0 0 8px var(--accent-dark);
+    }
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Clases de animación */
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.6s ease-out;
+}
+
+/* Animaciones de hover */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+} 
